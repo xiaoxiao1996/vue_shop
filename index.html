@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/vue.js"></script>	
+</head>
+<body>
+  <div id="app">
+	 <ul >
+	 	<li :class="toggleClass" @mouseover="addClass" @mouseout="removeClass">2</li>
+	 </ul>
+  </div>
+	 <script>
+	   new Vue({
+	     el:"#app",
+		 data(){
+		  return{ 
+			  toggleClass:{
+		         bgred:false
+		        }
+		  }
+		 },
+		 methods:{
+		 addClass(){	 
+		   this.toggleClass["bgred"]=true;
+		 },
+		 removeClass(){
+		  this.toggleClass["bgred"]=false;
+		 }
+
+		 }
+	   })
+	 </script>
+	 <style>
+	  .bgred{
+	   background:red;
+	  }
+	</style>
+	
+
+</body>
+</html>
