@@ -34,7 +34,7 @@ server.use(express.static("public"))
 server.use(bodyParser.urlencoded({
     extended:false
 }))
-server.listen(5000);
+server.listen(5050);
 server.get("/banner",(req,res)=>{
     var arr=[
         {id:1,img_url:"http://127.0.0.1:5000/img/lunbo1.jpg"},
