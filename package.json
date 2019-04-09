@@ -2,10 +2,10 @@
   "name": "vue_shop",
   "version": "1.0.0",
   "description": "vue商城项目",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "111",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
